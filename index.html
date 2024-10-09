@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portafolio de Alan Guerra, desarrollador web especializado en front-end y estudiante de Licenciatura en Computación. Explora mis proyectos y habilidades.">
+    <meta name="keywords" content="portafolio, Alan Guerra, desarrollador web, front-end, HTML, CSS, JavaScript, proyectos, encriptador de textos, C++, Python, MySQL, habilidades, estudiante de computación">
+    <meta name="author" content="Alan Guerra">
+    <title>Portafolio de Alan Guerra</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menú -->
+    <header class="cabecera">
+        <div class="cabecera__contenedor">
+            <img class="cabecera__logo" src="assets/vector.png" alt="Logo del portafolio de Alan Guerra">
+            <h1 class="cabecera__titulo">Alan Guerra</h1>
+        </div>
+        <nav class="navegacion" aria-label="Menú de navegación principal">
+            <ul class="navegacion__lista">
+                <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
+                <li class="navegacion__elemento"><a href="#habilidades">Habilidades</a></li>
+                <li class="navegacion__elemento"><a href="#aficiones">Aficiones</a></li>
+                <li class="navegacion__elemento"><a href="#formacion">Formación</a></li>
+                <li class="navegacion__elemento"><a href="#proyectos">Proyectos</a></li>
+                <li class="navegacion__elemento"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Sección presentación -->
+        <section class="presentacion" aria-labelledby="presentacion-titulo">
+            <div class="presentacion__contenedor">
+                <h2 id="presentacion-titulo" class="presentacion__titulo">Hola, mi nombre es Alan Guerra y construyo páginas web</h2>
+                <p class="presentacion__subtitulo">Soy estudiante de la Licenciatura en Computación desde el año 2022 (hasta la actualidad), con un enfoque especial en el desarrollo web front-end.</p>
+                <ul class="redes">
+                    <li class="redes__link"><a href="https://github.com/AlanGuerraO" aria-label="Enlace al GitHub de Alan Guerra">GitHub <img src="assets/arrow.png" alt="Flecha hacia la derecha"></a></li>
+                    <li class="redes__link"><a href="https://www.linkedin.com/in/alan-guerra-dwf/" aria-label="Enlace al LinkedIn de Alan Guerra">LinkedIn <img src="assets/arrow.png" alt="Flecha hacia la derecha"></a></li>
+                    <li class="redes__link"><a href="#" aria-label="Descargar currículum de Alan Guerra en formato PDF">Currículum <img src="assets/arrow.png" alt="Flecha hacia la derecha"></a></li>
+                </ul>
+            </div>
+            <img class="presentacion__foto" src="assets/perfil.png" alt="Foto del desarrollador Alan Guerra">
+        </section>
+
+        <!-- Sección sobre mí -->
+        <section class="sobre-mi" id="sobre-mi" aria-labelledby="sobre-mi-titulo">
+            <div class="sobre-mi__contenedor">
+                <h2 id="sobre-mi-titulo" class="sobre-mi__titulo">Sobre mí...</h2>
+                <p class="sobre-mi__texto">Soy Alan Guerra, estudiante de la Licenciatura en Computación desde 2022 (hasta la actualidad). Actualmente estoy cursando el programa Oracle Next Education (ONE) en Alura Latam, especializándome en front-end. Tengo un gran interés en el desarrollo web y, como pasatiempo, toco en un mariachi.</p>
+                <p class="sobre-mi__texto">A lo largo de mi carrera, he trabajado en diversos proyectos, como una aplicación web de encriptado de textos y varios programas en C++ y Python. Me apasiona el aprendizaje continuo, y actualmente estoy profundizando en áreas como estructuras de datos, métodos de ordenamiento y diseño web utilizando CSS flexbox.</p>
+            </div>
+        </section>
+
+        <!-- Sección habilidades -->
+        <section class="habilidades" id="habilidades" aria-labelledby="habilidades-titulo">
+            <h2 id="habilidades-titulo" class="habilidades__titulo">Habilidades</h2>
+            <ul class="habilidades__lista">
+                <li class="habilidades__elementos">
+                    <img src="assets/htlm.png" alt="Logo de HTML5" class="habilidades__icono">
+                    <p class="habilidades__nombre">HTML5</p>
+                </li>
+                <li class="habilidades__elementos">
+                    <img src="assets/css_icon.png" alt="Logo de CSS3" class="habilidades__icono">
+                    <p class="habilidades__nombre">CSS3</p>
+                </li>
+                <li class="habilidades__elementos">
+                    <img src="assets/js_icon.png" alt="Logo de JavaScript" class="habilidades__icono">
+                    <p class="habilidades__nombre">JavaScript</p>
+                </li>
+                <li class="habilidades__elementos">
+                    <img src="assets/c.png" alt="Logo de C++" class="habilidades__icono icono-especial">
+                    <p class="habilidades__nombre">C++</p>
+                </li>
+                <li class="habilidades__elementos">
+                    <img src="assets/python.png" alt="Logo de Python" class="habilidades__icono icono-especial">
+                    <p class="habilidades__nombre">Python</p>
+                </li>
+                <li class="habilidades__elementos">
+                    <img src="assets/mysql.png" alt="Logo de MySQL" class="habilidades__icono icono-especial">
+                    <p class="habilidades__nombre">MySQL</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Sección aficiones -->
+        <section class="aficiones" id="aficiones" aria-labelledby="aficiones-titulo">
+            <h2 id="aficiones-titulo" class="aficiones__titulo">Aficiones</h2>
+            <ul class="aficiones__lista">
+                <li class="aficiones__elemento">
+                    <img src="assets/senderismo.png" alt="Icono de senderismo" class="aficiones__icono icono-especial1">
+                    <p class="aficiones__nombre">Senderismo</p>
+                </li>
+                <li class="aficiones__elemento">
+                    <img src="assets/headphones_icon.png" alt="Icono de audífonos" class="aficiones__icono">
+                    <p class="aficiones__nombre">Oír música</p>
+                </li>
+                <li class="aficiones__elemento">
+                    <img src="assets/tv_icon.png" alt="Icono de televisor" class="aficiones__icono">
+                    <p class="aficiones__nombre">Ver series</p>
+                </li>
+                <li class="aficiones__elemento">
+                    <img src="assets/guitar_icon.png" alt="Icono de una guitarra" class="aficiones__icono">
+                    <p class="aficiones__nombre">Tocar guitarra</p>
+                </li>
+                <li class="aficiones__elemento">
+                    <img src="assets/chef.png" alt="Icono de un chef" class="aficiones__icono icono-especial1">
+                    <p class="aficiones__nombre">Cocinar</p>
+                </li>
+                <li class="aficiones__elemento">
+                    <img src="assets/camera_icon.png" alt="Icono de una cámara" class="aficiones__icono">
+                    <p class="aficiones__nombre">Tomar fotos</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Sección formación -->
+        <section class="formacion" id="formacion" aria-labelledby="formacion-titulo">
+            <h2 id="formacion-titulo" class="formacion__titulo">Formación académica</h2>
+            <ul class="formacion__lista">
+                <li class="formacion__elemento">
+                    <img src="assets/logo-escuela-de-ciencias.png" alt="Logo de la Escuela de Ciencias UABJO" class="formacion__icono">
+                    <div>
+                        <h3 class="formacion__nombre">Licenciatura en Computación</h3>
+                        <p class="formacion__detalle">2022 - Actual</p>
+                        <p class="formacion__detalle">Escuela de Ciencias (U.A.B.J.O)</p>
+                    </div>
+                </li>
+                <li class="formacion__elemento">
+                    <img src="assets/ONE logo.png" alt="Logo de Oracle Next Education" class="formacion__icono">
+                    <div>
+                        <h3 class="formacion__nombre">Especialización Front-End</h3>
+                        <p class="formacion__detalle">2024 - Actual</p>
+                        <p class="formacion__detalle">Programa Oracle Next Education ONE<br>(Alura + Oracle)</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Sección proyectos -->
+        <section class="proyectos" id="proyectos" aria-labelledby="proyectos-titulo">
+            <h2 id="proyectos-titulo" class="proyectos__titulo">Proyectos</h2>
+            <div class="proyectos__elemento">
+                <img src="assets/encriptador.png" alt="Proyecto encriptador de textos de Alan Guerra" class="proyectos__imagen">
+                <div class="proyectos__elemento--descripcion">
+                    <h3 class="proyectos__elemento--nombre">Encriptador de textos</h3>
+                    <p class="proyectos__elemento--texto">Challenge ONE</p>
+                    <div class="proyectos__elemento--botones">
+                        <a href="https://github.com/AlanGuerraO/encriptador-de-textos" class="boton__proyecto" target="_blank" aria-label="Ver repositorio en GitHub"><img src="assets/github.png" alt="Logo de GitHub" class="boton__proyecto--imagen">Repositorio</a>
+                        <a href="https://alanguerrao.github.io/encriptador-de-textos/" class="boton__proyecto boton__especial" target="_blank" aria-label="Ver sitio encriptador de textos en producción"><img src="assets/computadora.png" alt="Icono de una computadora" class="boton__proyecto--imagen">Deploy</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección contacto -->
+        <section class="contacto" id="contacto" aria-labelledby="contacto-titulo">
+            <div class="contacto__contenedor">
+                <img src="assets/contacto.png" alt="Imagen de contacto" class="contacto__imagen">
+                <div class="contacto__contenedor--formulario">
+                    <h2 id="contacto-titulo" class="contacto__titulo">Contacto</h2>
+                    <p class="contacto__texto">¿Quieres contactarme?</p>
+                    <p class="contacto__texto">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
+                    <form id="contactoForm" class="contacto__formulario">
+                        <div class="contacto__campo-container">
+                            <input class="contacto__campo" type="text" name="nombre" id="nombre" placeholder="Nombre" maxlength="50" aria-label="Introduce tu nombre" required>
+                            <label for="nombre" class="contacto__label">Nombre</label>
+                            <span id="nombreError" class="error"></span>
+                        </div>
+                        <div class="contacto__campo-container">
+                            <input class="contacto__campo" type="email" name="email" id="email" placeholder="Email" aria-label="Introduce tu correo electrónico" required>
+                            <label for="email" class="contacto__label">Email</label>
+                            <span id="emailError" class="error"></span>
+                        </div>
+                        <div class="contacto__campo-container">
+                            <input class="contacto__campo" type="text" name="asunto" id="asunto" placeholder="Asunto" maxlength="50" aria-label="Introduce el asunto" required>
+                            <label for="asunto" class="contacto__label">Asunto</label>
+                            <span id="asuntoError" class="error"></span>
+                        </div>
+                        <div class="contacto__campo-container">
+                            <textarea class="contacto__campo contacto__campo--textarea" name="mensaje" id="mensaje" placeholder="Mensaje" maxlength="300" aria-label="Escribe tu mensaje" required></textarea>
+                            <label for="mensaje" class="contacto__label">Mensaje</label>
+                            <span id="mensajeError" class="error"></span>
+                        </div>
+                        <button class="contacto__boton" type="submit" id="submitBtn" disabled>Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>© 2024 | Desarrollado por <a href="https://www.linkedin.com/in/alan-guerra-dwf/" target="_blank" rel="noopener noreferrer" class="footer__link">Alan Guerra</a></p>
+    </footer>
+    <script src="app.js" defer></script>
+</body>
+</html>

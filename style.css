@@ -1,0 +1,403 @@
+/* Declaracion de la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Declaracion de las variables globales */
+:root {
+    --color-de-fondo: #F5F5F5;
+    --color-de-fondo-menu: #ffffff;
+    --color-de-link: #000000;
+}
+
+/* Declaracion de los estilos globales */
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+.sobre-mi,
+.formacion,
+.contacto{
+    background: #EAF2FD;
+}
+
+.sobre-mi__titulo,
+.habilidades__titulo,
+.aficiones__titulo,
+.formacion__titulo,
+.proyectos__titulo,
+.contacto__titulo{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Cabecera */
+.cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cabecera__contenedor{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabecera__logo {
+    max-width: 24px;
+    max-height: 24px;
+}
+
+.cabecera__titulo{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navegacion__lista{
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Presentacion */
+.presentacion{
+    max-width: 1136px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.presentacion__titulo{
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.presentacion__subtitulo, 
+.redes__link{
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.redes{
+    display: flex;
+    gap: 30px;
+}
+
+.presentacion__foto{
+    height: 368px;
+    border-radius: 50%;
+}
+
+/* Sobre mí */
+.sobre-mi{
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-mi__contenedor{
+    width: 1136px;
+}
+
+.sobre-mi__texto{
+    width: 751px;
+    font-size: 16px;
+}
+
+/* Habilidades */
+.habilidades{
+    max-width: 1136px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.habilidades__titulo{
+    text-align: center;
+}
+
+.habilidades__lista{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.habilidades__elementos,
+.aficiones__elemento{
+    width: 170px;
+    height: 170px;
+    background: #ffffff;
+    align-content: end;
+    padding-left: 10px;
+    gap: 16px;
+}
+
+.habilidades__icono{
+    width: 32px;
+}
+
+.icono-especial{
+    width: 40px;
+}
+
+/* Aficiones */
+.aficiones{
+    max-width: 1136px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.aficiones__titulo{
+    text-align: center;
+}
+
+.aficiones__lista{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.habilidades__elementos:hover,
+.aficiones__elemento:hover{
+    background-color: #EAF2FD;
+    color: #007BFF;
+}
+
+.icono-especial1{
+    height: 45px;
+}
+
+/* Formacion */
+.formacion {
+    padding-bottom: 24px;
+}
+
+.formacion__titulo {
+    text-align: center;
+}
+
+.formacion__lista {
+    max-width: 1136px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin: 0 auto;
+}
+
+.formacion__elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.formacion__icono {
+    height: 130px;
+}
+
+.formacion__nombre,
+.formacion__detalle {
+    margin: 0;
+    padding: 0;
+}
+
+/* Proyectos */
+.proyectos__titulo{
+    text-align: center;
+}
+
+.proyectos__elemento{
+    display: flex;
+    padding-bottom: 24px;
+    max-width: 1136px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 32px;
+    align-items: center;
+}
+
+.proyectos__elemento--descripcion{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.proyectos__imagen{
+    height: 406px;
+}
+
+.proyectos__elemento--nombre,
+.proyectos__elemento--texto{
+    margin: 0;
+    padding: 0;
+}
+
+.proyectos__elemento--botones{
+    display: flex;
+    gap: 16px;
+}
+
+.boton__proyecto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid #2A7AE4 2px;
+    gap: 12px;
+    width: 150px;
+    height: 51px;
+}
+
+.boton__especial{
+    background: #2A7AE4;
+    color: #fff;
+}
+
+/* Contactos */
+.contacto {
+    padding-bottom: 24px;
+}
+
+.contacto__contenedor {
+    display: flex;
+    max-width: 1136px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    gap: 24px;
+}
+
+.contacto__titulo,
+.contacto__texto {
+    margin: 0;
+    padding: 0;
+}
+
+.contacto__formulario {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input {
+    height: 56px;
+}
+
+textarea {
+    height: 133px;
+    resize: none;
+}
+
+/* Contenedor para los campos y las etiquetas flotantes */
+.contacto__campo-container {
+    position: relative;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+.contacto__campo {
+    width: 100%;
+    padding: 15px 10px 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+/* Etiqueta flotante */
+.contacto__label {
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    font-size: 16px;
+    color: #ccc;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    background-color: white;
+    padding: 0 5px;
+    z-index: 1;
+}
+
+/* Cuando el campo tiene foco o texto */
+.contacto__campo:focus + .contacto__label,
+.contacto__campo:not(:placeholder-shown) + .contacto__label {
+    top: -10px;
+    font-size: 12px;
+    color: #2A7AE4;
+}
+
+/* Esconder el placeholder cuando el input está en foco */
+.contacto__campo:focus::placeholder {
+    color: transparent;
+}
+
+/* Cambios en el borde inferior */
+.contacto__campo:focus {
+    border-bottom: 2px solid #2A7AE4;
+}
+
+/* Estilos para el textarea */
+.contacto__campo--textarea {
+    resize: none;
+    height: 133px;
+}
+
+/* Estilos para el mensaje de error */
+.error {
+    color: red;
+    font-size: 0.9em;
+    display: none;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+
+/* Estilo del botón de enviar */
+.contacto__boton {
+    width: 144px;
+    height: 51px;
+    background: #2A7AE4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo del botón cuando está deshabilitado */
+.contacto__boton:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.contacto__imagen {
+    height: 300px;
+}
+
+/* Footer */
+.footer{
+    text-align: center;
+}
+
+.footer__link{
+    text-decoration: underline;
+}
