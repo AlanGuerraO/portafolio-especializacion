@@ -401,3 +401,155 @@ textarea {
 .footer__link{
     text-decoration: underline;
 }
+
+/* VERSION PARA TABLETS */
+@media (min-width: 576px) and (max-width: 1201px) {
+    /* Estilos Globales */
+    body {
+        padding: 0 32px;
+        overflow-x: hidden; /* Evitar scroll horizontal */
+    }
+
+    h1,h2{
+        font-size: 22px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .presentacion,
+    .sobre-mi__contenedor,
+    .formacion__lista,
+    .proyectos__elemento,
+    .contacto__contenedor {
+        max-width: 100%;
+        padding: 0 32px;
+        box-sizing: border-box; /* Incluir padding dentro del ancho */
+    }
+
+    /* Asegurar que el fondo ocupe todo el ancho del viewport */
+    .sobre-mi,
+    .formacion,
+    .contacto {
+        width: calc(100% + 64px); /* Se asegura que el fondo ocupe todo el ancho */
+        margin-left: -32px; /* Ajustar el margen para evitar desbordamientos */
+        padding-left: 32px;
+        padding-right: 32px;
+        box-sizing: border-box;
+    }
+
+    /* Cabecera */
+    .navegacion__lista {
+        display: flex;
+        gap: 20px;
+    }
+
+    /* Ocultar todos los enlaces excepto el de contacto */
+    .navegacion__elemento:not(:last-child) {
+        display: none;
+    }
+
+    /* Asegurarse que el enlace de contacto se muestra */
+    .navegacion__elemento:last-child {
+        display: block;
+    }
+
+    .cabecera__titulo {
+        font-size: 20px;
+        white-space: nowrap;
+    }
+
+    .cabecera {
+        justify-content: space-between;
+        padding: 0 32px;
+    }
+
+    .cabecera__logo {
+        width: 24px;
+    }
+
+    .presentacion__foto{
+        width: 9rem;
+    }
+
+    /* Sobre mi */
+    .sobre-mi__texto {
+        width: 100%;
+        text-align: left; /* Alinear el texto a la izquierda */
+    }
+
+    /* Habilidades y Aficiones */
+    .habilidades__lista,
+    .aficiones__lista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 0 32px;
+    }
+
+    .habilidades__elementos,
+    .aficiones__elemento {
+        width: 224px;
+        height: 118px;
+        background: #ffffff;
+        gap: 8px;
+    }
+
+    .habilidades__icono,
+    .aficiones__icono {
+        width: 32px;
+    }
+
+    .icono-especial {
+        width: 40px;
+    }
+
+    .icono-especial1 {
+        height: 45px;
+    }
+
+    /* Formacion */
+    .formacion__lista {
+        width: 100%;
+    }
+
+    /* Proyectos */
+    .proyectos{
+        padding-bottom: 32px;
+    }
+
+    .proyectos__elemento {
+        flex-direction: column;
+        width: 100%;
+        gap: 16px; /* Asegurar que haya espacio entre los elementos del proyecto */
+        align-items: flex-start; /* Alinear el contenido a la izquierda */
+    }
+
+    .proyectos__elemento--descripcion {
+        justify-content: left;
+        text-align: left; /* Alinear la descripción a la izquierda */
+        width: 100%; /* Hacer que ocupe el ancho completo */
+    }
+
+    .proyectos__imagen {
+        width: 100%; /* Hacer que la imagen se ajuste automáticamente al ancho */
+        height: auto; /* Mantener la proporción de la imagen */
+    }
+
+    /* Contacto */
+    .contacto__contenedor--formulario {
+        width: 100%; /* Asegurar que el formulario ocupe el 100% */
+        text-align: left; /* Alinear el texto a la izquierda */
+    }
+
+    .contacto__texto {
+        width: 100%; /* Asegurar que el texto ocupe el 100% del ancho */
+        text-align: left; /* Alinear el texto a la izquierda */
+    }
+
+    .contacto__imagen {
+        display: none;
+    }
+}
