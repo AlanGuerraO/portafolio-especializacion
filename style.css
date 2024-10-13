@@ -410,11 +410,11 @@ textarea {
         overflow-x: hidden; /* Evitar scroll horizontal */
     }
 
-    h1,h2{
+    h1, h2 {
         font-size: 22px;
     }
 
-    p{
+    p {
         font-size: 16px;
     }
 
@@ -469,8 +469,15 @@ textarea {
         width: 24px;
     }
 
-    .presentacion__foto{
-        width: 9rem;
+    /* Presentación */
+    .presentacion {
+        display: flex;
+    }
+
+    .presentacion__foto {
+        width: 100%; /* Imagen responsiva */
+        max-width: 150px; /* Ajustar tamaño máximo de la imagen a partir de 1112px */
+        height: auto; /* Mantener la proporción */
     }
 
     /* Sobre mi */
@@ -482,19 +489,30 @@ textarea {
     /* Habilidades y Aficiones */
     .habilidades__lista,
     .aficiones__lista {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Dividir en 3 columnas */
         gap: 16px;
         padding: 0 32px;
     }
 
+    @media (min-width: 1112px) {
+        .habilidades__lista,
+        .aficiones__lista {
+            grid-template-columns: repeat(3, 1fr); /* Dividir en 2 columnas para pantallas mayores a 1112px */
+        }
+    }
+
     .habilidades__elementos,
     .aficiones__elemento {
-        width: 224px;
+        width: 100%;
+        max-width: 224px;
         height: 118px;
         background: #ffffff;
         gap: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .habilidades__icono,
@@ -516,7 +534,7 @@ textarea {
     }
 
     /* Proyectos */
-    .proyectos{
+    .proyectos {
         padding-bottom: 32px;
     }
 
